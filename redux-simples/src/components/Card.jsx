@@ -9,8 +9,7 @@ function getColor (props){
     if(props.purple) return "Purple"
     return ""
 }
-
-export default props => {
+const card = (props) => {
     return (
         <div className={`Card ${getColor(props)}`}>
             <div className="Header">
@@ -22,3 +21,5 @@ export default props => {
         </div>
     )
 }
+
+export default card
